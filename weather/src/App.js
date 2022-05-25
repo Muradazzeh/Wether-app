@@ -3,17 +3,18 @@ import { useState } from 'react';
 import './App.css';
 import  Image  from './image/weather-icon.png';
 const api ={
-  key :"8637a68a72e0461a7615ac82c89bfdc8",
+  // key :,
   base:"https://api.openweathermap.org/data/2.5/"
 }
+
 
 function App() {
 const[query,setQuery]=useState("")
 const[wether,setWether]=useState({})
-
+let myKey=process.env.REACT_APP_MKEY
 const search =see=>{
 if(see.key=="Enter"){
-  fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+  fetch(`${api.base}weather?q=${query}&units=metric&APPID=${myKey}`)
   .then(res=>res.json())
   .then(result=>{ setWether(result)
   setQuery(" ");
