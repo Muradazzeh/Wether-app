@@ -4,7 +4,7 @@ import './App.css';
 import  Image  from './image/weather-icon.png';
 const api ={
   key :"8637a68a72e0461a7615ac82c89bfdc8",
-  base:"http://api.openweathermap.org/data/2.5/"
+  base:"https://api.openweathermap.org/data/2.5/"
 }
 
 function App() {
