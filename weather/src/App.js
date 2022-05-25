@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import  Image  from './image/weather-icon.png';
 const api ={
-  // key :,
+  // key :
   base:"https://api.openweathermap.org/data/2.5/"
 }
 
